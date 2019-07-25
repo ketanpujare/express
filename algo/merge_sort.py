@@ -25,7 +25,8 @@ def merge_sort(a):
 
     if len(a)<=1: return a
     
-    left,right = merge_sort(a[:int(len(a)/2)]), merge_sort(a[int(len(a)/2):])
+    left,right = merge_sort(a[:len(a)//2]), merge_sort(a[int(len(a)//2):])
+    # // provides only integer result .
 
     return merge(left,right)
 
