@@ -61,7 +61,7 @@ def sub(x, y):
 
 
 @debugmethods
-class Span:
+class Span(object):
     def methodA(self):
         return 9
 
